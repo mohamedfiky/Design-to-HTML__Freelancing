@@ -57,7 +57,7 @@ body{
 /**********************/
 
 .fk-temp-1 .header{
-    border-bottom: 4px solid var(--whitish-color);
+    border-bottom: .25rem solid var(--whitish-color);
     padding: 1rem;
 }
 
@@ -89,7 +89,7 @@ body{
 .fk-temp-1 .header-content .profile-img{
     width: 10.5rem;
     height: 10.5rem;
-    border: 4px solid var(--whitish-color);
+    border: .25rem solid var(--whitish-color);
     border-radius: 50%;
     overflow: hidden;
 }
