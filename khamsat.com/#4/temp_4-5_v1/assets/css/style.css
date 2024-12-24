@@ -1,0 +1,319 @@
+:root{
+    --white:#f0f0f0;
+    --black: #292D2E ;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: #999;
+    font-family: "Roboto", serif;
+}
+
+.fk-temp-2{
+    width: 794px;
+    height: 1123px;
+    background-color: #E0E0E0; 
+    margin: auto;
+}
+
+.fk-temp-2 .container{
+    padding: 0 1.5rem;
+}
+
+.fk-temp-2 h3{
+    text-transform: uppercase;
+    font-size: 1.15rem;
+    letter-spacing: .05rem;
+    margin-bottom: 1rem;
+}
+
+.fk-temp-2 h4{
+    font-size: 1.1rem;
+    font-weight: normal;
+}
+
+.fk-temp-2 p
+{
+    font-size: .85rem;
+    line-height: 1.5;
+}
+
+.fk-temp-2 ul{
+    padding-left: 1rem;
+}
+
+/**********************/
+
+.fk-temp-2 .header{
+    background-color: var(--black);
+    padding: 1.5rem 1rem;
+}
+
+.fk-temp-2 .header-content{
+    padding-top: 5rem;
+    color: var(--white);
+}
+
+.fk-temp-2 .header-content .info{
+    text-align: center;
+}
+
+.fk-temp-2 .header-content .info h1{
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-family: "Noto Serif", serif;
+}
+
+.fk-temp-2 .header-content .info h2{
+    font-size: 1.6rem;
+    letter-spacing: .2rem;
+    margin-top: -.4rem;
+    text-transform: capitalize;
+    font-family: "Noto Serif", serif;
+}
+
+.fk-temp-2 .header-content .contacts{
+    margin-top: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fk-temp-2 .header-content .contacts .contact-item{
+    display: flex;
+    align-items: center;
+    gap:.9rem;
+}
+
+.fk-temp-2 .header-content .contacts .contact-item span{
+    font-size: 1rem;
+}
+
+.fk-temp-2 .header-content .contacts .contact-item i{
+    font-size: .9rem;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    color: var(--black);
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*****************/
+
+.fk-temp-2 .main{
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    color: #444;
+}
+
+.fk-temp-2 .main .main-content{
+    display: flex;
+    justify-content: space-between;
+    gap:1.5rem;
+}
+
+.fk-temp-2 .main .main-content .left{
+    width: 35%;
+    margin-top: .5rem;
+}
+
+.fk-temp-2 .main .main-content .left .left-content{
+    background-color: #fff;
+    border-radius: 2.5rem;
+    padding: 2.5rem 2rem;
+}
+
+.fk-temp-2 .main .main-content .left-content .edu-item{
+    padding-top: .5rem;
+    margin-bottom: 1rem;
+}
+
+.fk-temp-2 .main .main-content .left-content .edu-item span{
+    font-size: .75rem;
+}
+
+.fk-temp-2 .main .main-content .left-content .expertise{
+    margin-top: 2.25rem;
+}
+
+.fk-temp-2 .main .main-content .left-content .expertise li{
+    font-size: .85rem;
+    line-height: 1.5;
+    margin-bottom: .75rem;
+}
+
+.fk-temp-2 .main .main-content .left-content .langs{
+    margin-top: 2.25rem;
+}
+
+/* thanks Chat GPT */
+.fk-temp-2 .main .main-content .left-content .langs li::before {
+    content: "•"; /* Custom bullet -- جابها منين مش عارف ؟ */
+    color: var(--black); 
+    left: -.75rem;
+    font-size: 1.2rem;
+    position: absolute;
+}
+
+.fk-temp-2 .main .main-content .left-content .langs li{
+    font-size: .85rem;
+    line-height: 1.5;
+    margin-bottom: .75rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.fk-temp-2 .main .main-content .left-content .langs li > span{
+    min-width: 35%;
+}
+
+.fk-temp-2 .main .main-content .left-content .langs li div{
+    display: flex;
+    align-items: center;
+}
+
+.fk-temp-2 .main .main-content .left-content .langs li div span{
+    height: .5rem;
+    width: 5.5rem;
+    border-radius: .5rem;
+    background-color: var(--black);
+    display: block;
+}
+
+.fk-temp-2 .main .main-content .left-content .langs li div i{
+    font-size: .8rem;
+    margin-left: -.25rem;
+}
+
+.fk-temp-2 .main .main-content .right{
+    width: 65%;
+    margin-top: .5rem;
+}
+
+.fk-temp-2 .main .main-content .right .right-content .profile{
+    margin-bottom: 1.75rem;
+}
+
+.fk-temp-2 .main .main-content .right .right-content .professional .work-item{
+    margin-bottom: 1.75rem;
+}
+
+.fk-temp-2 .main .main-content .right-content .professional .work-item .company-time{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: .4rem;
+}
+
+.fk-temp-2 .main .main-content .right-content .professional .work-item .company-time span{
+    font-size: .75rem;
+    letter-spacing: .1rem;
+}
+
+.fk-temp-2 .main .main-content .right-content .professional .work-item h5{
+    font-weight: normal;
+    font-size: .75rem;
+    margin-bottom: .75rem;
+}
+
+.fk-temp-2 .main .main-content .right-content .professional .work-item li{
+    font-size: .85rem;
+    line-height: 1.5;
+}
+
+.fk-temp-2 .main .main-content .right-content .ref div{
+    margin-bottom: .3rem;
+}
+
+.fk-temp-2 .main .main-content .right-content .ref div p{
+    font-size: 1rem;
+}
+
+.fk-temp-2 .main .main-content .right-content .ref span.key{
+    font-size: .65rem;
+    display: inline-block;
+    min-width: 2.3rem;
+}
+
+
+
+
+
+
+/********************** Media Query ***********************/
+
+
+ @media(max-width : 820px){
+
+    html{
+        font-size: 14px;
+    }
+
+    .fk-temp-2{
+        width: 98vw;
+        height: auto;
+        padding-bottom: 1.25rem;
+    }
+    
+}
+
+
+@media(max-width : 695px){
+
+    html{
+        font-size: 12px;
+    }
+    
+}
+
+
+@media(max-width : 595px){
+
+    html{
+        font-size: 10px;
+    }
+
+    .fk-temp-2{
+        width: 100vw;
+    }
+    
+}
+
+
+@media(max-width : 495px){
+
+    html{
+        font-size: 8px;
+    }
+    
+}
+
+
+@media(max-width : 395px){
+
+    html{
+        font-size: 7px;
+    }
+    
+}
+
+
+@media(max-width : 350px){
+
+    html{
+        font-size: 6px;
+    }
+    
+} 
+
+

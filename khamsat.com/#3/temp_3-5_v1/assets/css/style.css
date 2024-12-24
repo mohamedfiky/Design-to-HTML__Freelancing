@@ -280,7 +280,14 @@ body{
     .fk-temp-3{
         width: 98vw;
         height: auto;
-        padding-bottom: 1.25rem;
+    }
+
+    .fk-temp-3 .main{
+        padding-bottom: 0;
+    }
+
+    .fk-temp-3 .main .main-content .left-content .langs{
+        margin-bottom: 7rem;
     }
     
 }
