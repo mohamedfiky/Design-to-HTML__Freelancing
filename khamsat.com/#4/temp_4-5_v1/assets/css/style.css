@@ -1,6 +1,6 @@
 :root{
-    --white:#f0f0f0;
-    --black: #292D2E ;
+    --bluish: #163955 ;
+    --whitish: #eee;
 }
 
 *{
@@ -10,242 +10,282 @@
 
 body{
     box-sizing: border-box;
-    background-color: #999;
+    background-color: #444;
     font-family: "Roboto", serif;
 }
 
-.fk-temp-2{
+.fk-temp-4{
     width: 794px;
     height: 1123px;
-    background-color: #E0E0E0; 
+    background-color: #fff; 
     margin: auto;
+    overflow: hidden;
 }
 
-.fk-temp-2 .container{
-    padding: 0 1.5rem;
-}
-
-.fk-temp-2 h3{
+.fk-temp-4 h3{
     text-transform: uppercase;
     font-size: 1.15rem;
-    letter-spacing: .05rem;
+    letter-spacing: .15rem;
     margin-bottom: 1rem;
+    font-weight: 500;
+    padding-bottom: .25rem;
 }
 
-.fk-temp-2 h4{
-    font-size: 1.1rem;
-    font-weight: normal;
+.fk-temp-4 .sidebar h3{
+    border-bottom: .1rem solid var(--whitish);
 }
 
-.fk-temp-2 p
+.fk-temp-4 .main h3{
+    border-bottom: .1rem solid var(--bluish);
+}
+
+.fk-temp-4 h4{
+    font-size: .9rem;
+    font-weight: 500;
+    margin-top: .2rem;
+}
+
+.fk-temp-4 p
 {
     font-size: .85rem;
     line-height: 1.5;
 }
 
-.fk-temp-2 ul{
+.fk-temp-4 ul{
     padding-left: 1rem;
+    margin-top: .6rem;
 }
 
 /**********************/
 
-.fk-temp-2 .header{
-    background-color: var(--black);
-    padding: 1.5rem 1rem;
-}
 
-.fk-temp-2 .header-content{
-    padding-top: 5rem;
-    color: var(--white);
-}
-
-.fk-temp-2 .header-content .info{
-    text-align: center;
-}
-
-.fk-temp-2 .header-content .info h1{
-    font-size: 3rem;
-    text-transform: uppercase;
-    letter-spacing: .2rem;
-    font-family: "Noto Serif", serif;
-}
-
-.fk-temp-2 .header-content .info h2{
-    font-size: 1.6rem;
-    letter-spacing: .2rem;
-    margin-top: -.4rem;
-    text-transform: capitalize;
-    font-family: "Noto Serif", serif;
-}
-
-.fk-temp-2 .header-content .contacts{
-    margin-top: 2.5rem;
+.fk-temp-4 .content{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    height: 100%;
 }
 
-.fk-temp-2 .header-content .contacts .contact-item{
-    display: flex;
-    align-items: center;
-    gap:.9rem;
-}
-
-.fk-temp-2 .header-content .contacts .contact-item span{
-    font-size: 1rem;
-}
-
-.fk-temp-2 .header-content .contacts .contact-item i{
-    font-size: .9rem;
-    width: 1.5rem;
-    height: 1.5rem;
-    border-radius: 50%;
-    color: var(--black);
-    background-color: var(--white);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-/*****************/
-
-.fk-temp-2 .main{
-    padding-top: 2rem;
-    padding-bottom: 1rem;
-    color: #444;
-}
-
-.fk-temp-2 .main .main-content{
-    display: flex;
-    justify-content: space-between;
-    gap:1.5rem;
-}
-
-.fk-temp-2 .main .main-content .left{
+.fk-temp-4 .content .sidebar{
     width: 35%;
-    margin-top: .5rem;
+    height: 100%;
+    color:#fff;
 }
 
-.fk-temp-2 .main .main-content .left .left-content{
-    background-color: #fff;
-    border-radius: 2.5rem;
-    padding: 2.5rem 2rem;
+.fk-temp-4 .content .sidebar .profile-image{
+    width: 100%;
+    height: 18rem;
 }
 
-.fk-temp-2 .main .main-content .left-content .edu-item{
-    padding-top: .5rem;
+.fk-temp-4 .content .sidebar .profile-image img{
+    width: 100%;
+    height: 100%;
+}
+
+.fk-temp-4 .content .sidebar .side-content{
+    height: 100%;
+    background: linear-gradient(to bottom, #2A2A42, #9f9de8);
+    padding: 2rem 3rem 2rem 2rem;
+}
+
+.fk-temp-4 .content .sidebar .side-content .contacts{
+    margin-bottom: 2.5rem;
+}
+
+.fk-temp-4 .content .sidebar .side-content .contacts .contact-item{
+    display: flex;
+    align-items: center;
+    gap:.7rem;
     margin-bottom: 1rem;
+    
 }
 
-.fk-temp-2 .main .main-content .left-content .edu-item span{
+.fk-temp-4 .content .sidebar .side-content .contacts .contact-item span{
     font-size: .75rem;
+    color: var(--whitish);
 }
 
-.fk-temp-2 .main .main-content .left-content .expertise{
-    margin-top: 2.25rem;
+.fk-temp-4 .content .sidebar .side-content .contacts .contact-item i{
+    font-size: .9rem;
+    color: var(--whitish);
+    width: 1rem;
 }
 
-.fk-temp-2 .main .main-content .left-content .expertise li{
+.fk-temp-4 .content .sidebar .side-content .education{
+    margin-bottom: 2.5rem;
+}
+
+.fk-temp-4 .content .sidebar .side-content .education .edu-item{
+    margin-bottom: 1.5rem;
+}
+
+.fk-temp-4 .content .sidebar .side-content .education .edu-item span{
     font-size: .85rem;
-    line-height: 1.5;
-    margin-bottom: .75rem;
 }
 
-.fk-temp-2 .main .main-content .left-content .langs{
-    margin-top: 2.25rem;
+.fk-temp-4 .content .sidebar .side-content .education .edu-item ul li{
+    color: var(--whitish);
+    font-size: .8rem;
+    line-height: 1.5;
+}
+
+.fk-temp-4 .content .sidebar .side-content .langs{
+    margin-bottom: 2.5rem;
 }
 
 /* thanks Chat GPT */
-.fk-temp-2 .main .main-content .left-content .langs li::before {
+.fk-temp-4 .content .sidebar .side-content .langs li::before {
     content: "•"; /* Custom bullet -- جابها منين مش عارف ؟ */
-    color: var(--black); 
     left: -.75rem;
     font-size: 1.2rem;
     position: absolute;
 }
 
-.fk-temp-2 .main .main-content .left-content .langs li{
-    font-size: .85rem;
+.fk-temp-4 .content .sidebar .side-content .langs li{
+    font-size: .8rem;
     line-height: 1.5;
-    margin-bottom: .75rem;
     display: flex;
     align-items: center;
     position: relative;
+    color:var(--whitish);
 }
 
-.fk-temp-2 .main .main-content .left-content .langs li > span{
+.fk-temp-4 .content .sidebar .side-content .langs li span{
     min-width: 35%;
 }
 
-.fk-temp-2 .main .main-content .left-content .langs li div{
+.fk-temp-4 .content .sidebar .side-content .langs li div{
     display: flex;
     align-items: center;
 }
 
-.fk-temp-2 .main .main-content .left-content .langs li div span{
-    height: .5rem;
-    width: 5.5rem;
-    border-radius: .5rem;
-    background-color: var(--black);
-    display: block;
+.fk-temp-4 .content .sidebar .side-content .langs li div i{
+    font-size: .65rem;
+    margin-right: .1rem;
 }
 
-.fk-temp-2 .main .main-content .left-content .langs li div i{
+.fk-temp-4 .content .sidebar .side-content .skills li{
     font-size: .8rem;
-    margin-left: -.25rem;
+    line-height: 1.5;
+    margin-bottom: .35rem;
+    color:var(--whitish);
 }
 
-.fk-temp-2 .main .main-content .right{
+
+/*************************/
+
+
+.fk-temp-4 .content .main{
     width: 65%;
+    color: var(--bluish);
+    padding: 1rem 2rem;
+}
+
+.fk-temp-4 .content .main .header{
+    padding-top: 2rem;
+    padding-bottom: 3.25rem;
+    text-align: center;
+}
+
+.fk-temp-4 .content .main .header h1{
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+}
+
+.fk-temp-4 .content .main .header h2{
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
     margin-top: .5rem;
 }
 
-.fk-temp-2 .main .main-content .right .right-content .profile{
+.fk-temp-4 .content .main .profile{
     margin-bottom: 1.75rem;
 }
 
-.fk-temp-2 .main .main-content .right .right-content .professional .work-item{
+.fk-temp-4 .content .main .profile p{
+    margin-top: -.5rem;
+}
+
+.fk-temp-4 .content .main .work{
     margin-bottom: 1.75rem;
 }
 
-.fk-temp-2 .main .main-content .right-content .professional .work-item .company-time{
+.fk-temp-4 .content .main .work .work-items{
+    margin-top: -.5rem;
+    padding-left: 1.25rem;
+    position: relative;
+}
+
+.fk-temp-4 .content .main .work .work-items::before{
+    content: "";
+    position: absolute;
+    top: .8rem;
+    left: 0;
+    width: .1rem;
+    height: calc(100% - .8rem);
+    background-color: var(--bluish);
+}
+
+.fk-temp-4 .content .main .work .work-item{
+    margin-bottom: 1.1rem;
+}
+
+.fk-temp-4 .content .main .work .work-items .work-item .company-time{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: .4rem;
+    margin-bottom: .25rem;
 }
 
-.fk-temp-2 .main .main-content .right-content .professional .work-item .company-time span{
-    font-size: .75rem;
-    letter-spacing: .1rem;
+.fk-temp-4 .content .main .work .work-items .work-item .company-time h4{
+    position: relative;
 }
 
-.fk-temp-2 .main .main-content .right-content .professional .work-item h5{
-    font-weight: normal;
-    font-size: .75rem;
-    margin-bottom: .75rem;
+.fk-temp-4 .content .main .work .work-items .work-item .company-time h4::before{
+    content: "•"; /* Custom bullet -- جابها منين مش عارف ؟ */
+    left: -1.5rem;
+    top:-.5rem;
+    font-size: 1.75rem;
+    position: absolute;
 }
 
-.fk-temp-2 .main .main-content .right-content .professional .work-item li{
+.fk-temp-4 .content .main .work .work-items .work-item .company-time span{
+    font-size: .85rem;
+    color:#555;
+}
+
+.fk-temp-4 .content .main .work .work-items .work-item h5{
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+.fk-temp-4 .content .main .work .work-items .work-item ul{
+    padding-left: 1.25rem;
+}
+
+.fk-temp-4 .content .main .work .work-items .work-item ul li{
     font-size: .85rem;
     line-height: 1.5;
 }
 
-.fk-temp-2 .main .main-content .right-content .ref div{
-    margin-bottom: .3rem;
+.fk-temp-4 .content .main .ref p.ref-name{
+    font-weight: bold;
+    margin-bottom: .1rem;
+    margin-top: -.5rem;
 }
 
-.fk-temp-2 .main .main-content .right-content .ref div p{
-    font-size: 1rem;
-}
-
-.fk-temp-2 .main .main-content .right-content .ref span.key{
-    font-size: .65rem;
+.fk-temp-4 .content .main .ref p .key{
+    font-weight: bold;
+    font-size: .6rem;
     display: inline-block;
-    min-width: 2.3rem;
+    min-width: 2.25rem;
 }
 
-
+.fk-temp-4 .content .main .ref p .value{
+    font-size: .7rem;
+}
 
 
 
@@ -259,10 +299,13 @@ body{
         font-size: 14px;
     }
 
-    .fk-temp-2{
+    .fk-temp-4{
         width: 98vw;
         height: auto;
-        padding-bottom: 1.25rem;
+    }
+
+    .fk-temp-4 .content .sidebar .side-content .skills{
+        margin-bottom: 2rem;
     }
     
 }
@@ -283,7 +326,7 @@ body{
         font-size: 10px;
     }
 
-    .fk-temp-2{
+    .fk-temp-4{
         width: 100vw;
     }
     
