@@ -1,0 +1,328 @@
+:root{
+    --bluish: #1F3044 ;
+    --beige: #E1DCD9;
+    --whitish: #EBEBEB;
+    --grey: #ccc;
+    --blue: #244076 ;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: #444;
+    font-family: "Roboto", serif;
+}
+
+.fk-temp-5{
+    width: 794px;
+    height: 1123px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.fk-temp-5 p
+{
+    font-size: .85rem;
+    line-height: 1.5;
+}
+
+.fk-temp-5 ul{
+    padding-left: 1.75rem;
+    margin-top: .6rem;
+}
+
+/**********************/
+
+
+.fk-temp-5 .content{
+    display: flex;
+    height: 100%;
+}
+
+.fk-temp-5 .content .sidebar{
+    width: 45%;
+    height: 100%;
+    color: var(--whitish);
+    background-color: var(--bluish);
+    padding-top: 5.5rem;
+}
+
+.fk-temp-5 .content .sidebar .side-content{
+    height: 100%;
+}
+
+.fk-temp-5 .content .sidebar .side-content .profile-image{
+    height: 10rem;
+    background-color: #BDACA4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fk-temp-5 .content .sidebar .side-content .profile-image img{
+    display: block;
+    height: 12rem;
+    width: 12rem;
+    border-radius: 50%;
+    border: .21rem solid var(--beige);
+}
+
+.fk-temp-5 .content .sidebar .side-content .side-info{
+    padding: 4.5rem 3.5rem;
+}
+
+.fk-temp-5 .content .sidebar .side-content .side-info .about{
+    margin-bottom: 2.5rem;
+}
+
+.fk-temp-5 .content .sidebar .side-content .side-info .about h3{
+    font-size: 1.25rem;
+    text-align: center;
+    margin-bottom: .5rem;
+}
+
+.fk-temp-5 .content .sidebar .side-content .side-info .about p{
+    font-size: .75rem;
+    text-align: center;
+    color: var(--grey);
+}
+
+.fk-temp-5 .content .sidebar .side-content .about .contacts{
+    margin-top: 2rem;
+}
+
+.fk-temp-5 .content .sidebar .side-content .contacts .contact-item{
+    display: flex;
+    align-items: center;
+    gap:.7rem;
+    margin-bottom: 1.5rem;
+    
+}
+
+.fk-temp-5 .content .sidebar .side-content .contacts .contact-item i{
+    font-size: .9rem;
+    color: var(--bluish);
+    background-color: var(--beige);
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fk-temp-5 .content .sidebar .side-content .contacts .contact-item span{
+    font-size: .75rem;
+    color: var(--grey);
+}
+
+.fk-temp-5 .content .sidebar .side-content .side-info .langs{
+    margin-bottom: 1rem;
+}
+
+.fk-temp-5 .content .sidebar .side-content .side-info .expertise{
+    margin-bottom: 1rem;
+}
+
+.fk-temp-5 .content .sidebar .side-content .side-info .langs li,
+.fk-temp-5 .content .sidebar .side-content .side-info .expertise li{
+    margin-bottom: .6rem ;
+    font-size: .95rem;
+    color: var(--grey);
+}
+
+.fk-temp-5 .sidebar .langs h3,
+.fk-temp-5 .sidebar .expertise h3
+{
+    text-transform: capitalize;
+    font-size: 1rem;
+    letter-spacing: .05rem;
+    margin-bottom: 1rem;
+    background-color: var(--bluish);
+    border: .12rem solid var(--beige);
+    color: var(--whitish);
+    padding: .35rem;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+
+
+
+
+/*************************/
+
+
+.fk-temp-5 .content .main{
+    width: 55%;
+    background-color: var(--beige);
+    color: var(--bluish);
+    padding-top: 5.5rem;
+}
+
+.fk-temp-5 .content .main .header{
+    height: 10rem;
+    background-color: var(--whitish);
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: .05rem .5rem 1.5rem #7b736f;
+}
+
+.fk-temp-5 .content .main .header h1{
+    font-size: 3.25rem;
+    text-transform: uppercase;
+    color: var(--blue);
+    line-height: 1;
+}
+
+.fk-temp-5 .content .main .header h2{
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    font-weight: normal;
+    letter-spacing: .05rem;
+    color: var(--blue);
+}
+
+.fk-temp-5 .content .main .main-content{
+    margin-top: 2rem;
+    padding: 0 1.5rem;
+}
+
+.fk-temp-5 .main .main-content h3{
+    text-transform: capitalize;
+    font-size: 1rem;
+    letter-spacing: .05rem;
+    margin-bottom: 1rem;
+    background-color: var(--bluish);
+    color: var(--whitish);
+    padding: .35rem;
+    border-radius: 1rem;
+    text-align: center;
+    width: 50%;
+    margin-left: -.5rem;
+}
+
+.fk-temp-5 .main .main-content .work{
+    margin-bottom: 1.5rem;
+}
+
+.fk-temp-5 .main .main-content .work .work-item{
+    margin-bottom: 1rem;
+}
+
+.fk-temp-5 .main .main-content .work .work-item h4,
+.fk-temp-5 .main .main-content .work .work-item h5,
+.fk-temp-5 .main .main-content .work .work-item span
+{
+    font-size: .9rem;
+    font-weight: 500;
+    color: var(--blue);
+    margin-bottom: .2rem;
+}
+
+.fk-temp-5 .main .main-content .work .work-item p{
+    margin-top: .5rem;
+    color: var(--bluish);
+}
+
+.fk-temp-5 .main .main-content .education{
+    margin-bottom: 1.5rem;
+}
+
+.fk-temp-5 .main .main-content .education .edu-item{
+    margin-bottom: 1rem;
+}
+
+.fk-temp-5 .main .main-content .education .edu-item h4{
+    font-size: .9rem;
+    font-weight: 500;
+    color: var(--blue);
+}
+
+.fk-temp-5 .main .main-content .education .edu-item p,
+.fk-temp-5 .main .main-content .education .edu-item span
+{
+    font-size: .85rem;
+    line-height: 1.5;
+}
+
+.fk-temp-5 .main .main-content .skills .skill-item{
+    margin-right: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: .5rem;
+}
+
+.fk-temp-5 .main .main-content .skills .skill-item .progress-area{
+    display: flex;
+    align-items: center;
+    gap: .25rem;
+}
+
+.fk-temp-5 .main .main-content .skills .skill-item .progress-area .progress-bar{
+    width: 5rem;
+    height: .4rem;
+    background-color: var(--whitish);
+    border-radius: .2rem;
+}
+
+.fk-temp-5 .main .main-content .skills .skill-item .progress-area .progress-bar span{
+    height: .4rem;
+    background-color: var(--blue);
+    display: block;
+    border-radius: .2rem;
+}
+
+.fk-temp-5 .main .main-content .skills .skill-item .progress-area .progress-bar span.sk-1{
+    width: 87%
+}
+
+.fk-temp-5 .main .main-content .skills .skill-item .progress-area .progress-bar span.sk-2{
+    width: 70%
+}
+
+.fk-temp-5 .main .main-content .skills .skill-item .progress-area span.value{
+    color: var(--blue);
+    font-size: 1.1rem;
+}
+
+
+
+
+
+
+/********************** Media Query ***********************/
+
+
+ 
+
+@media(max-width : 794px){
+
+    html{
+        font-size: 10.9px;
+    }
+
+    .fk-temp-5{
+        width: 542px;
+        height: 767px;
+    }
+}
+
+@media(max-width : 542px){
+
+    html{
+        font-size: 6px;
+    }
+
+    .fk-temp-5{
+        width: 300px;
+        height: 425px;
+    }
+}
