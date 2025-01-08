@@ -58,7 +58,6 @@ body{
     color: var(--white);
     display: flex;
     justify-content: space-between;
-    gap: .3rem;
 }
 
 .fk-temp-3 .header-content .profile-img{
@@ -73,7 +72,8 @@ body{
 
 .fk-temp-3 .header-content .name-title{
     background-color: var(--black);
-    width: 65%;
+    width: 64%;
+    margin-left: .5%;
     padding: 2rem 2rem 1.5rem 2.25rem;
     position: relative;
 }
@@ -105,14 +105,8 @@ body{
 .fk-temp-3 .header-content .contacts .contact-item{
     display: flex;
     align-items: center;
-    gap:.6rem;
     margin-bottom: .6rem;
     
-}
-
-.fk-temp-3 .header-content .contacts .contact-item span{
-    font-size: .75rem;
-    color:#CDCBCC;
 }
 
 .fk-temp-3 .header-content .contacts .contact-item i{
@@ -125,7 +119,14 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-right: .6rem;
 }
+
+.fk-temp-3 .header-content .contacts .contact-item span{
+    font-size: .75rem;
+    color:#CDCBCC;
+}
+
 
 .fk-temp-3 .header-content .name-title .stupid-circle{
     width: 15rem;
@@ -143,21 +144,17 @@ body{
     padding-top: .2rem;
     padding-bottom: 1rem;
     color: #444;
-    height: 100%;
 }
 
 .fk-temp-3 .main .main-content{
     display: flex;
     justify-content: space-between;
-    gap:1.5rem;
-    height: 100%;
 }
 
 .fk-temp-3 .main .main-content .left{
     min-width: 35%;
     max-width: 35%;
     background-color: #EFF0F4;
-    height: 100%;
 }
 
 .fk-temp-3 .main .main-content .left .left-content{
@@ -182,11 +179,11 @@ body{
     font-size: .85rem;
     line-height: 1.5;
     margin-bottom: .75rem;
-    /* text-wrap: nowrap; */
 }
 
 .fk-temp-3 .main .main-content .left-content .langs{
     margin-top: 2.25rem;
+    margin-bottom: 7.5rem;
 }
 
 .fk-temp-3 .main .main-content .left-content .langs li{
@@ -197,7 +194,8 @@ body{
 }
 
 .fk-temp-3 .main .main-content .right{
-    width: 65%;
+    width: 63%;
+    margin-left: 2%;
     margin-top: 1.75rem;
     padding-right: 1rem;
 }
@@ -294,6 +292,10 @@ body{
         width: 300px;
         height: 425px;
     }
+
+    .fk-temp-3 .main .main-content .left-content .langs{
+        margin-bottom: 8rem;
+    }
 }
 
 
@@ -317,10 +319,6 @@ body{
         margin: 0;
         padding: 0;
     }
-
-    html{
-        font-size: 16px;
-    }
     
     body{
         box-sizing: border-box;
@@ -330,7 +328,7 @@ body{
     
     .fk-temp-3{
         width: 794px;
-        height: 1123px;
+        height: 1122.5px;
         background-color: #fff; 
         margin: auto;
         overflow: hidden;
@@ -372,7 +370,6 @@ body{
         color: var(--white);
         display: flex;
         justify-content: space-between;
-        gap: .3rem;
     }
     
     .fk-temp-3 .header-content .profile-img{
@@ -387,7 +384,8 @@ body{
     
     .fk-temp-3 .header-content .name-title{
         background-color: var(--black);
-        width: 65%;
+        width: 64%;
+        margin-left: .5%;
         padding: 2rem 2rem 1.5rem 2.25rem;
         position: relative;
     }
@@ -419,14 +417,8 @@ body{
     .fk-temp-3 .header-content .contacts .contact-item{
         display: flex;
         align-items: center;
-        gap:.6rem;
         margin-bottom: .6rem;
         
-    }
-    
-    .fk-temp-3 .header-content .contacts .contact-item span{
-        font-size: .75rem;
-        color:#CDCBCC;
     }
     
     .fk-temp-3 .header-content .contacts .contact-item i{
@@ -439,7 +431,14 @@ body{
         display: flex;
         align-items: center;
         justify-content: center;
+        margin-right: .6rem;
     }
+    
+    .fk-temp-3 .header-content .contacts .contact-item span{
+        font-size: .75rem;
+        color:#CDCBCC;
+    }
+    
     
     .fk-temp-3 .header-content .name-title .stupid-circle{
         width: 15rem;
@@ -457,21 +456,17 @@ body{
         padding-top: .2rem;
         padding-bottom: 1rem;
         color: #444;
-        height: 100%;
     }
     
     .fk-temp-3 .main .main-content{
         display: flex;
         justify-content: space-between;
-        gap:1.5rem;
-        height: 100%;
     }
     
     .fk-temp-3 .main .main-content .left{
         min-width: 35%;
         max-width: 35%;
         background-color: #EFF0F4;
-        height: 100%;
     }
     
     .fk-temp-3 .main .main-content .left .left-content{
@@ -496,11 +491,11 @@ body{
         font-size: .85rem;
         line-height: 1.5;
         margin-bottom: .75rem;
-        /* text-wrap: nowrap; */
     }
     
     .fk-temp-3 .main .main-content .left-content .langs{
         margin-top: 2.25rem;
+        margin-bottom: 7.5rem;
     }
     
     .fk-temp-3 .main .main-content .left-content .langs li{
@@ -511,7 +506,8 @@ body{
     }
     
     .fk-temp-3 .main .main-content .right{
-        width: 65%;
+        width: 63%;
+        margin-left: 2%;
         margin-top: 1.75rem;
         padding-right: 1rem;
     }
@@ -576,6 +572,9 @@ body{
     .fk-temp-3 .main .main-content .right-content .reference span.val{
         font-size: .65rem;
     }
+    
+    
+
     
 }
 
