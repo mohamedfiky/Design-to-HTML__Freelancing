@@ -110,13 +110,12 @@ body{
 /*****************/
 
 .fk-temp-8 .main{
-    height: 100%;
+    background-color: #fff;
 }
 
 .fk-temp-8 .main .main-content{
     display: flex;
     justify-content: space-between;
-    height: 100%;
 }
 
 .fk-temp-8 .main .main-content .left{
@@ -126,7 +125,6 @@ body{
     color: var(--whitish);
     background-color: var(--blue);
     border-right: .25rem solid var(--dark-blue);
-    height: 100%;
 }
 
 .fk-temp-8 .main .main-content .left .left-content{
@@ -185,7 +183,7 @@ body{
 
 .fk-temp-8 .main .main-content .left-content .langs{
     margin-top: 1.35rem;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
 }
 
 .fk-temp-8 .main .main-content .left-content .langs ul{
@@ -238,7 +236,7 @@ body{
     border: .15rem solid var(--blue);
     padding: .1rem .75rem;
     border-radius: 2rem;
-    min-width: 30rem;
+    min-width: 50rem;
 }
 
 .fk-temp-8 .main .main-content .right .right-content .experience .work-item{
@@ -348,4 +346,338 @@ body{
 }
 
 
+
+
+/********** Print Media Query ************/
+
+
+
+
+@media print{
+
+    @page{
+        margin: 0;
+        padding: 0;
+    }
+
+    :root{
+        --whitish:#E3E8ED;
+        --dark-blue: #1E3653;
+        --blue: #315B7D;
+        --grey: #BCC9D0;
+    }
+    
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    
+    body{
+        box-sizing: border-box;
+        background-color: #444;
+        font-family: "Alice", serif;
+    }
+    
+    .fk-temp-8{
+        width: 794px;
+        height: 1123px;
+        background-color: #fff; 
+        margin: auto;
+        overflow: hidden;
+    }
+    
+    .fk-temp-8 .container{
+        padding: 0 1.5rem;
+    }
+    
+    .fk-temp-8 p
+    {
+        font-size: .8rem;
+        line-height: 1.5;
+    }
+    
+    .fk-temp-8 ul{
+        padding-left: 1rem;
+    }
+    
+    
+    /**********************/
+    
+    .fk-temp-8 .header{
+        background-color: var(--blue);
+        border-bottom: .25rem solid var(--dark-blue);
+        position: relative;
+    }
+    
+    .fk-temp-8 .header .stupid-triangle{
+        position: absolute;
+        height: 8rem;
+        width: 8rem;
+        background-color: var(--dark-blue);
+        transform: rotate(45deg);
+        left:-4.5rem;
+        top:-4.5rem;
+    }
+    
+    .fk-temp-8 .header-content{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .fk-temp-8 .header-content .name-title{
+        background-color: var(--blue);
+        width: 60%;
+        padding: 2.35rem 1.5rem;
+        color: var(--black);
+        text-align: center;
+    }
+    
+    .fk-temp-8 .header-content .name-title .info h1{
+        font-size: 4.25rem;
+        text-transform: uppercase;
+        font-family: "Anton", serif;
+        color:#fff;
+        font-weight: normal;
+        line-height: 1.1;
+        letter-spacing: .15rem;
+    }
+    
+    .fk-temp-8 .header-content .name-title .info h2{
+        font-size: 1.75rem;
+        margin-top: .4rem;
+        text-transform: capitalize;
+        font-family: "Anton", serif;
+        color:#fff;
+        font-weight: normal;
+        letter-spacing: .15rem;
+    }
+    
+    .fk-temp-8 .header-content .profile-img{
+        min-width: 37%;
+        max-width: 37%;
+        background-color: var(--blue);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .fk-temp-8 .header-content .profile-img img{
+        width: 13.25rem;
+        height: 13.25rem;
+        border: .25rem solid var(--grey);
+        border-radius: 50%;
+    }
+    
+    
+    /*****************/
+    
+    .fk-temp-8 .main{
+        background-color: #fff;    
+    }
+    
+    .fk-temp-8 .main .main-content{
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .fk-temp-8 .main .main-content .left{
+        min-width: 37%;
+        max-width: 37%;
+        color: var(--whitish);
+        background-color: var(--blue);
+        border-right: .25rem solid var(--dark-blue);
+        height: 600px; /*** test to add fixed height in px ***/
+    }
+    
+    .fk-temp-8 .main .main-content .left .left-content{
+        padding: 2.25rem 1.5rem 0;
+    }
+    
+    .fk-temp-8 .main .main-content .left .left-content h3{
+        text-transform: capitalize;
+        font-size: 1.6rem;
+        margin-bottom: .65rem;
+        margin-left: -.75rem;
+        color: #fff;
+    }
+    
+    .fk-temp-8 .main .main-content .left-content .contacts{
+        margin-top: 1.75rem;
+    }
+    
+    .fk-temp-8 .main .main-content .left-content .contacts .contact-item{
+        display: flex;
+        align-items: center;
+        margin-bottom: .6rem;
+    }
+    
+    .fk-temp-8 .main .main-content .left-content .contacts .contact-item i{
+        font-size: .65rem;
+        width: 1.2rem;
+        height: 1.2rem;
+        border-radius: .25rem;
+        color: var(--dark-blue);
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: .6rem;
+    }
+    
+    .fk-temp-8 .main .main-content .left-content .contacts .contact-item span{
+        font-size: .85rem;
+    }
+    
+    .fk-temp-8 .main .main-content .left-content .skills{
+        margin-top: 1.75rem;
+    }
+    
+    .fk-temp-8 .main .main-content .left-content .skills ul{
+        padding-left: .5rem;
+    }
+    
+    .fk-temp-8 .main .main-content .left-content .skills li{
+        font-size: 1rem;
+        line-height: 1.5;
+        margin-bottom: .65rem;
+        letter-spacing: .05rem;
+    }
+    
+    .fk-temp-8 .main .main-content .left-content .langs{
+        margin-top: 1.35rem;
+        /* margin-bottom: 1rem; ***** left fixed hight مش قاريها , شوف حل تانى , إدى ال  *****/
+    }
+    
+    .fk-temp-8 .main .main-content .left-content .langs ul{
+        padding-left: 0;
+    }
+    
+    .fk-temp-8 .main .main-content .left-content .langs li{
+        font-size: .8rem;
+        line-height: 1.5;
+        margin-bottom: .2rem;
+        display: flex;
+        align-items: center;
+    }
+    
+    .fk-temp-8 .main .main-content .left-content .langs li span{
+        min-width: 35%;
+        font-size: 1rem;
+    }
+    
+    .fk-temp-8 .main .main-content .left-content .langs li div{
+        display: flex;
+        align-items: center;
+        width: 60%;
+        margin-left: 2%;
+    }
+    
+    .fk-temp-8 .main .main-content .left-content .langs li div i{
+        font-size: .9rem;
+        margin-right: .2rem;
+        color: var(--grey);
+    }
+    
+    
+    /****************/
+    
+    
+    .fk-temp-8 .main .main-content .right{
+        width: 63%;
+        color:#444;
+        margin-left: -.1rem; /* I do NOT know why but do Not dare to change it !!! */
+    }
+    
+    .fk-temp-8 .main .main-content .right .right-content{
+        padding: 2.75rem 2rem 0 1.25rem;
+    }
+    
+    .fk-temp-8 .main .main-content .right .right-content h3{
+        text-transform: capitalize;
+        font-size: 1.6rem;
+        margin-bottom: .65rem;
+        margin-left: -1rem;
+        color: var(--dark-blue);
+        border: .15rem solid var(--blue);
+        padding: .1rem .75rem;
+        border-radius: 2rem;
+        min-width: 50rem;
+    }
+    
+    .fk-temp-8 .main .main-content .right .right-content .experience .work-item{
+        margin-bottom: .5rem;
+    }
+    
+    .fk-temp-8 .main .main-content .right .right-content .experience .work-item h4{
+        font-size: 1rem;
+        font-weight: normal;
+    }
+    
+    .fk-temp-8 .main .main-content .right-content .experience .work-item .company-time{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: .4rem;
+        margin-top: .2rem;
+    }
+    
+    .fk-temp-8 .main .main-content .right-content .experience .work-item .company-time h5{
+        font-size: 1.2rem;
+    }
+    
+    .fk-temp-8 .main .main-content .right-content .experience .work-item .company-time span{
+        font-size: .95rem;
+    }
+    
+    .fk-temp-8 .main .main-content .right-content .experience .work-item li{
+        font-size: .9rem;
+        line-height: 1.5;
+    }
+    
+    .fk-temp-8 .main .main-content .right .right-content .education{
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .fk-temp-8 .main .main-content .right .right-content .education .edu-item{
+        margin-bottom: .75rem;
+    }
+    
+    .fk-temp-8 .main .main-content .right .right-content .education .edu-item .edu-time{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: .2rem;
+        padding-top: .5rem;
+    }
+    
+    .fk-temp-8 .main .main-content .right .right-content .education .edu-item .edu-time h4{
+        font-size: 1.2rem;
+    }
+    
+    .fk-temp-8 .main .main-content .right .right-content .education .edu-item .edu-time span{
+        font-size: .95rem;
+    }
+    
+    .fk-temp-8 .main .main-content .right .right-content .education .edu-item h5{
+        font-size: 1rem;
+        font-weight: normal;
+    }
+    
+    .fk-temp-8 .main .main-content .right-content .reference .refs p.name{
+        font-size: 1.2rem;
+    }
+    
+    .fk-temp-8 .main .main-content .right-content .reference .refs p.job{
+        font-size: 1rem;
+    }
+    
+    .fk-temp-8 .main .main-content .right-content .reference .refs p{
+        font-size: .85rem;
+        margin-bottom: .1rem;
+        line-height: 1.3;
+    }
+    
+
+}
 
