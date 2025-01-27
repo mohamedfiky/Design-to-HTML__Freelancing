@@ -1,0 +1,364 @@
+:root{
+    --bg-color: #EEF5F3;
+    --blue : #022046;
+    --green : #097C69;
+    --grey: #555;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: #777;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.fk-cvrltr-3{
+    width: 794px;
+    height: 1123px;
+    background-color: var(--bg-color); 
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.fk-cvrltr-3 .style-top{
+    width: 100%;
+}
+
+.fk-cvrltr-3 .style-bottom{
+    width: 100%;
+    position: absolute;
+    bottom: -.3rem;
+}
+
+.fk-cvrltr-3 .style-top img,
+.fk-cvrltr-3 .style-bottom img
+{
+    width: 100%;
+}
+
+.fk-cvrltr-3 .container{
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.fk-cvrltr-3 .header{
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+.fk-cvrltr-3 .header .profile-contacts{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fk-cvrltr-3 .header .profile-contacts .profile-img{
+    width: 43%;
+}
+
+.fk-cvrltr-3 .header .profile-contacts .profile-img img{
+    width: 100%;
+    border-radius: 50%;
+    border: .25rem solid var(--green);
+}
+
+.fk-cvrltr-3 .header .profile-contacts .contacts{
+    width: 50%;
+}
+
+.fk-cvrltr-3 .header .profile-contacts .contacts .contact-item{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.fk-cvrltr-3 .header .profile-contacts .contacts .contact-item i{
+    font-size: 1.2rem;
+    width: 1.3rem;
+    height: 1.3rem;
+    color: var(--blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+}
+
+.fk-cvrltr-3 .header .profile-contacts .contacts .contact-item span{
+    font-size: .85rem;
+    line-height: 1.5;
+    color: var(--grey);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.fk-cvrltr-3 .header .info{
+    text-align: center;
+    margin-top: .5rem;
+    margin-bottom: 3rem;
+    color: var(--blue);
+}
+
+.fk-cvrltr-3 .header .info h1{
+    font-size: 4rem;
+    margin-bottom: .5rem;
+    text-transform: capitalize;
+    font-weight: normal;
+}
+
+.fk-cvrltr-3 .header .info h2{
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: normal;
+    letter-spacing: .2rem;
+}
+
+
+
+/**************/
+
+.fk-cvrltr-3 .letter{
+    color: var(--blue);
+}
+
+.fk-cvrltr-3 .letter .sender-info p{
+    margin-bottom: .35rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.fk-cvrltr-3 .letter h3{
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    font-weight: normal;
+    letter-spacing: .2rem;
+    margin-bottom: 1rem;
+    margin-top: 1.25rem;
+}
+
+.fk-cvrltr-3 .letter p{
+    font-size: .95rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+}
+
+.fk-cvrltr-3 .letter p.ending{
+    margin-bottom: .75rem;
+}
+
+.fk-cvrltr-3 .letter h4{
+    font-size: 2.25rem;
+    font-weight: normal;
+    text-transform: capitalize;
+    font-family: "Sassy Frass", serif;
+}
+
+
+
+
+/********************** Media Query ***********************/
+
+
+
+@media(max-width : 794px){
+
+    html{
+        font-size: 10.9px;
+    }
+
+    .fk-cvrltr-3{
+        width: 542px;
+        height: 767px;
+    }
+}
+
+@media(max-width : 542px){
+
+    html{
+        font-size: 6px;
+    }
+
+    .fk-cvrltr-3{
+        width: 300px;
+        height: 425px;
+    }
+}
+
+
+/**************************/
+
+
+@media print{
+
+    @page {
+        margin: 0;
+        padding: 0;
+    }
+
+    :root{
+        --bg-color: #EEF5F3;
+        --blue : #022046;
+        --green : #097C69;
+        --grey: #555;
+    }
+    
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    
+    body{
+        box-sizing: border-box;
+        background-color: #777;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+    
+    .fk-cvrltr-3{
+        width: 794px;
+        height: 1123px;
+        background-color: var(--bg-color); 
+        margin: auto;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .fk-cvrltr-3 .style-top{
+        width: 100%;
+    }
+    
+    .fk-cvrltr-3 .style-bottom{
+        width: 100%;
+        position: absolute;
+        bottom: -.3rem;
+    }
+    
+    .fk-cvrltr-3 .style-top img,
+    .fk-cvrltr-3 .style-bottom img
+    {
+        width: 100%;
+    }
+    
+    .fk-cvrltr-3 .container{
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+    
+    .fk-cvrltr-3 .header{
+        margin-top: 1rem;
+        margin-bottom: 2.5rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+    
+    .fk-cvrltr-3 .header .profile-contacts{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .fk-cvrltr-3 .header .profile-contacts .profile-img{
+        width: 43%;
+    }
+    
+    .fk-cvrltr-3 .header .profile-contacts .profile-img img{
+        width: 100%;
+        border-radius: 50%;
+        border: .25rem solid var(--green);
+    }
+    
+    .fk-cvrltr-3 .header .profile-contacts .contacts{
+        width: 50%;
+    }
+    
+    .fk-cvrltr-3 .header .profile-contacts .contacts .contact-item{
+        display: flex;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+    
+    .fk-cvrltr-3 .header .profile-contacts .contacts .contact-item i{
+        font-size: 1.2rem;
+        width: 1.3rem;
+        height: 1.3rem;
+        color: var(--blue);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 1rem;
+    }
+    
+    .fk-cvrltr-3 .header .profile-contacts .contacts .contact-item span{
+        font-size: .85rem;
+        line-height: 1.5;
+        color: var(--grey);
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    
+    .fk-cvrltr-3 .header .info{
+        text-align: center;
+        margin-top: .5rem;
+        margin-bottom: 3rem;
+        color: var(--blue);
+    }
+    
+    .fk-cvrltr-3 .header .info h1{
+        font-size: 4rem;
+        margin-bottom: .5rem;
+        text-transform: capitalize;
+        font-weight: normal;
+    }
+    
+    .fk-cvrltr-3 .header .info h2{
+        font-size: 1.6rem;
+        text-transform: uppercase;
+        font-weight: normal;
+        letter-spacing: .2rem;
+    }
+    
+    
+    
+    /**************/
+    
+    .fk-cvrltr-3 .letter{
+        color: var(--blue);
+    }
+    
+    .fk-cvrltr-3 .letter .sender-info p{
+        margin-bottom: .35rem;
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+    
+    .fk-cvrltr-3 .letter h3{
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        font-weight: normal;
+        letter-spacing: .2rem;
+        margin-bottom: 1rem;
+        margin-top: 1.25rem;
+    }
+    
+    .fk-cvrltr-3 .letter p{
+        font-size: .95rem;
+        line-height: 1.5;
+        margin-bottom: 1.5rem;
+    }
+    
+    .fk-cvrltr-3 .letter p.ending{
+        margin-bottom: .75rem;
+    }
+    
+    .fk-cvrltr-3 .letter h4{
+        font-size: 2.25rem;
+        font-weight: normal;
+        text-transform: capitalize;
+        font-family: "Sassy Frass", serif;
+    }
+    
+}
+
