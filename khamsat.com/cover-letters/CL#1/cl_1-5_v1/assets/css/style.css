@@ -228,6 +228,8 @@ body{
         align-items: end;
         margin-bottom: 2.5rem;
         margin-top: -6.5rem;
+        position: relative;
+        z-index: 1000;
     }
     
     .fk-cvrltr-1 .header .profile-img{
