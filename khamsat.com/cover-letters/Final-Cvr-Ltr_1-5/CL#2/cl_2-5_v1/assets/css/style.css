@@ -256,7 +256,7 @@ body{
     }
     
     .fk-cvrltr-1 .header .contacts .contact-item:last-of-type i{
-        padding: .1rem .25rem;
+        padding: .1rem .75rem .1rem .35rem;
     }
     
     .fk-cvrltr-1 .header .contacts .contact-item span{
