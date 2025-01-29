@@ -310,6 +310,7 @@ body{
     .fk-cvrltr-4 .header .contacts .contact-item{
         display: flex;
         align-items: center;
+        width:33%;
     }
     
     .fk-cvrltr-4 .header .contacts .contact-item i{
