@@ -1,7 +1,7 @@
 :root{
-    --bg-color: #fff;
-    --grey-bg: #D9D9D9;
-    --blue : #113852;
+    --white: #fff;
+    --red : #670000;
+    --black: #000000;
     --text-grey: #555;
 }
 
@@ -13,89 +13,84 @@
 body{
     box-sizing: border-box;
     background-color: #777;
-    font-family: "Playfair", serif;
+    font-family: "Roboto", serif;
 }
 
-.fk-cvrltr-4{
+.fk-cvrltr-5{
     width: 794px;
     height: 1123px;
-    background-color: var(--bg-color); 
+    background-color: var(--white); 
     margin: auto;
     position: relative;
     overflow: hidden;
 }
 
-.fk-cvrltr-4 .style-top{
-    width: 100%;
+.fk-cvrltr-5 .style-top{
+    width: 28%;
 }
 
-.fk-cvrltr-4 .style-bottom{
-    width: 40%;
+.fk-cvrltr-5 .style-bottom{
+    width: 30%;
     height: 3rem;
     position: absolute;
-    bottom: 5.6rem;
+    bottom: 6rem;
     right: 0;
 }
 
-.fk-cvrltr-4 .style-top img,
-.fk-cvrltr-4 .style-bottom img
+.fk-cvrltr-5 .style-top img,
+.fk-cvrltr-5 .style-bottom img
 {
     width: 100%;
 }
 
-.fk-cvrltr-4 .container{
+.fk-cvrltr-5 .container{
     padding-left: 5rem;
     padding-right: 5rem;
 }
 
 /****************/
 
-.fk-cvrltr-4 .header{
-    margin-top: -1rem;
-    margin-bottom: 3.5rem;
-    background-color: var(--grey-bg);
+.fk-cvrltr-5 .header{
+    margin-top: -13rem;
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+    background-color: var(--red);
+    color: var(--white);
 }
 
-.fk-cvrltr-4 .header .info{
+.fk-cvrltr-5 .header .info{
     text-align: center;
-    padding-top: 1rem;
-    margin-bottom: 3rem;
-    color: var(--blue);
 }
 
-.fk-cvrltr-4 .header .info h1{
-    font-size: 3.5rem;
+.fk-cvrltr-5 .header .info h1{
+    font-size: 2.5rem;
     margin-bottom: .5rem;
     text-transform: uppercase;
-    font-family: "Playfair", serif;
-    letter-spacing: .3rem;
-    font-weight: 800;
+    font-weight: 300;
 }
 
-.fk-cvrltr-4 .header .info h2{
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    font-weight: normal;
-    letter-spacing: .5rem;
-    word-spacing: .5rem;
-    font-family: "Raleway", sans-serif;
+.fk-cvrltr-5 .header .info h2{
+    font-size: 1.75rem;
+    text-transform: capitalize;
+    font-weight: 300;
 }
 
-.fk-cvrltr-4 .header .contacts{
+.fk-cvrltr-5 .contacts{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 5rem;
-    background-color: var(--blue);
-    color: var(--grey-bg);
+    padding: 1rem 2rem;
+    background-color: var(--black);
+    color: var(--white);
+    margin: -1.75rem 3rem 2rem;
 }
 
-.fk-cvrltr-4 .header .contacts .contact-item{
+.fk-cvrltr-5 .contacts .contact-item{
     display: flex;
     align-items: center;
 }
 
-.fk-cvrltr-4 .header .contacts .contact-item i{
+.fk-cvrltr-5 .contacts .contact-item i{
     font-size: 1.3rem;
     width: 1.3rem;
     height: 1.3rem;
@@ -105,71 +100,90 @@ body{
     margin-right: .6rem;
 }
 
-.fk-cvrltr-4 .header .contacts .contact-item span{
+.fk-cvrltr-5 .contacts .contact-item span{
     font-size: .8rem;
     line-height: 1.5;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
 /**************/
 
-.fk-cvrltr-4 .letter{
+.fk-cvrltr-5 .letter{
     color: var(--text-grey);
 }
 
-.fk-cvrltr-4 .letter .to{
-    margin-bottom: 2rem;
+.fk-cvrltr-5 .letter .to{
+    margin-bottom: 3rem;
+    font-family: "Playfair", serif;
 }
 
-.fk-cvrltr-4 .letter .to p{
+.fk-cvrltr-5 .letter .to span{
+    font-size: 1.35rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+}
+
+.fk-cvrltr-5 .letter .to p{
     margin-bottom: 0rem;
+    font-size: 1.35rem;
+    line-height: 1.2;
+}
+
+.fk-cvrltr-5 .letter .to p.capital{
     font-size: 1.15rem;
-    line-height: 1.5;
-}
-
-.fk-cvrltr-4 .letter .to p.bold{
-    font-size: 1.25rem;
-    font-weight: 800;
-}
-
-.fk-cvrltr-4 .letter .to p.upper{
-    text-transform: uppercase;
+    text-transform: capitalize;
     margin-bottom: .25rem;
+    font-family: "Roboto", serif;
 }
 
-.fk-cvrltr-4 .letter .opening{
+.fk-cvrltr-5 .letter .to p.capital.last{
+    margin-bottom: 1.25rem;
+}
+
+.fk-cvrltr-5 .letter .opening{
     margin-bottom: 2rem;
 }
 
-.fk-cvrltr-4 .letter .opening p{
-    font-size: 1.2rem;
+.fk-cvrltr-5 .letter .opening h3{
+    font-size: 1.25rem;
+    margin-bottom: .75rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+}
+
+.fk-cvrltr-5 .letter .opening p{
+    font-size: 1rem;
     margin-bottom: 0;
 }
 
-.fk-cvrltr-4 .letter p{
-    font-size: 1.1rem;
+.fk-cvrltr-5 .letter p{
+    font-size: 1rem;
     line-height: 1.5;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.75rem;
 }
 
-.fk-cvrltr-4 .letter .ending p{
+.fk-cvrltr-5 .letter .ending p{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    
+}
+
+.fk-cvrltr-5 .letter .ending h3{
     font-size: 1.2rem;
+    text-transform: capitalize;
+    font-family: "Playfair", serif;
+    font-weight: normal;
+    margin-bottom: .5rem;
 }
 
-.fk-cvrltr-4 .letter .ending h4{
-    font-size: 3rem;
+.fk-cvrltr-5 .letter .ending h4{
+    font-size: 2.5rem;
     font-weight: normal;
     text-transform: capitalize;
     font-family: "Sassy Frass", serif;
 }
 
-.fk-cvrltr-4 .letter .ending h3{
-    font-size: .9rem;
-    text-transform: capitalize;
-    margin-top: 1.25rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
 
 
 
@@ -186,7 +200,7 @@ body{
         font-size: 10.9px;
     }
 
-    .fk-cvrltr-4{
+    .fk-cvrltr-5{
         width: 542px;
         height: 767px;
     }
@@ -198,7 +212,7 @@ body{
         font-size: 6px;
     }
 
-    .fk-cvrltr-4{
+    .fk-cvrltr-5{
         width: 300px;
         height: 425px;
     }
@@ -216,9 +230,9 @@ body{
     }
 
     :root{
-        --bg-color: #fff;
-        --grey-bg: #D9D9D9;
-        --blue : #113852;
+        --white: #fff;
+        --red : #670000;
+        --black: #000000;
         --text-grey: #555;
     }
     
@@ -230,89 +244,84 @@ body{
     body{
         box-sizing: border-box;
         background-color: #777;
-        font-family: "Playfair", serif;
+        font-family: "Roboto", serif;
     }
     
-    .fk-cvrltr-4{
+    .fk-cvrltr-5{
         width: 794px;
         height: 1123px;
-        background-color: var(--bg-color); 
+        background-color: var(--white); 
         margin: auto;
         position: relative;
         overflow: hidden;
     }
     
-    .fk-cvrltr-4 .style-top{
-        width: 100%;
+    .fk-cvrltr-5 .style-top{
+        width: 28%;
     }
     
-    .fk-cvrltr-4 .style-bottom{
-        width: 40%;
+    .fk-cvrltr-5 .style-bottom{
+        width: 30%;
         height: 3rem;
         position: absolute;
-        bottom: 5.6rem;
+        bottom: 6rem;
         right: 0;
     }
     
-    .fk-cvrltr-4 .style-top img,
-    .fk-cvrltr-4 .style-bottom img
+    .fk-cvrltr-5 .style-top img,
+    .fk-cvrltr-5 .style-bottom img
     {
         width: 100%;
     }
     
-    .fk-cvrltr-4 .container{
+    .fk-cvrltr-5 .container{
         padding-left: 5rem;
         padding-right: 5rem;
     }
     
     /****************/
     
-    .fk-cvrltr-4 .header{
-        margin-top: -1rem;
-        margin-bottom: 3.5rem;
-        background-color: var(--grey-bg);
+    .fk-cvrltr-5 .header{
+        margin-top: -13rem;
+        padding-top: 5rem;
+        padding-bottom: 4rem;
+        background-color: var(--red);
+        color: var(--white);
     }
     
-    .fk-cvrltr-4 .header .info{
+    .fk-cvrltr-5 .header .info{
         text-align: center;
-        padding-top: 1rem;
-        margin-bottom: 3rem;
-        color: var(--blue);
     }
     
-    .fk-cvrltr-4 .header .info h1{
-        font-size: 3.5rem;
+    .fk-cvrltr-5 .header .info h1{
+        font-size: 2.5rem;
         margin-bottom: .5rem;
         text-transform: uppercase;
-        font-family: "Playfair", serif;
-        letter-spacing: .3rem;
-        font-weight: 800;
+        font-weight: 300;
     }
     
-    .fk-cvrltr-4 .header .info h2{
-        font-size: 1.1rem;
-        text-transform: uppercase;
-        font-weight: normal;
-        letter-spacing: .5rem;
-        word-spacing: .5rem;
-        font-family: "Raleway", sans-serif;
+    .fk-cvrltr-5 .header .info h2{
+        font-size: 1.75rem;
+        text-transform: capitalize;
+        font-weight: 300;
     }
     
-    .fk-cvrltr-4 .header .contacts{
+    .fk-cvrltr-5 .contacts{
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 1rem 5rem;
-        background-color: var(--blue);
-        color: var(--grey-bg);
+        padding: 1rem 2rem;
+        background-color: var(--black);
+        color: var(--white);
+        margin: -1.75rem 3rem 2rem;
     }
     
-    .fk-cvrltr-4 .header .contacts .contact-item{
+    .fk-cvrltr-5 .contacts .contact-item{
         display: flex;
         align-items: center;
     }
     
-    .fk-cvrltr-4 .header .contacts .contact-item i{
+    .fk-cvrltr-5 .contacts .contact-item i{
         font-size: 1.3rem;
         width: 1.3rem;
         height: 1.3rem;
@@ -322,70 +331,88 @@ body{
         margin-right: .6rem;
     }
     
-    .fk-cvrltr-4 .header .contacts .contact-item span{
+    .fk-cvrltr-5 .contacts .contact-item span{
         font-size: .8rem;
         line-height: 1.5;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
     
     
     /**************/
     
-    .fk-cvrltr-4 .letter{
+    .fk-cvrltr-5 .letter{
         color: var(--text-grey);
     }
     
-    .fk-cvrltr-4 .letter .to{
-        margin-bottom: 2rem;
+    .fk-cvrltr-5 .letter .to{
+        margin-bottom: 3rem;
+        font-family: "Playfair", serif;
     }
     
-    .fk-cvrltr-4 .letter .to p{
+    .fk-cvrltr-5 .letter .to span{
+        font-size: 1.35rem;
+        margin-bottom: 1rem;
+        display: inline-block;
+    }
+    
+    .fk-cvrltr-5 .letter .to p{
         margin-bottom: 0rem;
+        font-size: 1.35rem;
+        line-height: 1.2;
+    }
+    
+    .fk-cvrltr-5 .letter .to p.capital{
         font-size: 1.15rem;
-        line-height: 1.5;
-    }
-    
-    .fk-cvrltr-4 .letter .to p.bold{
-        font-size: 1.25rem;
-        font-weight: 800;
-    }
-    
-    .fk-cvrltr-4 .letter .to p.upper{
-        text-transform: uppercase;
+        text-transform: capitalize;
         margin-bottom: .25rem;
+        font-family: "Roboto", serif;
     }
     
-    .fk-cvrltr-4 .letter .opening{
+    .fk-cvrltr-5 .letter .to p.capital.last{
+        margin-bottom: 1.25rem;
+    }
+    
+    .fk-cvrltr-5 .letter .opening{
         margin-bottom: 2rem;
     }
     
-    .fk-cvrltr-4 .letter .opening p{
-        font-size: 1.2rem;
+    .fk-cvrltr-5 .letter .opening h3{
+        font-size: 1.25rem;
+        margin-bottom: .75rem;
+        font-weight: normal;
+        text-transform: uppercase;
+        letter-spacing: .1rem;
+    }
+    
+    .fk-cvrltr-5 .letter .opening p{
+        font-size: 1rem;
         margin-bottom: 0;
     }
     
-    .fk-cvrltr-4 .letter p{
-        font-size: 1.1rem;
+    .fk-cvrltr-5 .letter p{
+        font-size: 1rem;
         line-height: 1.5;
-        margin-bottom: 1.5rem;
+        margin-bottom: 1.75rem;
     }
     
-    .fk-cvrltr-4 .letter .ending p{
+    .fk-cvrltr-5 .letter .ending p{
+        font-size: 1rem;
+        margin-bottom: 1rem;
+        
+    }
+    
+    .fk-cvrltr-5 .letter .ending h3{
         font-size: 1.2rem;
+        text-transform: capitalize;
+        font-family: "Playfair", serif;
+        font-weight: normal;
+        margin-bottom: .5rem;
     }
     
-    .fk-cvrltr-4 .letter .ending h4{
-        font-size: 3rem;
+    .fk-cvrltr-5 .letter .ending h4{
+        font-size: 2.5rem;
         font-weight: normal;
         text-transform: capitalize;
         font-family: "Sassy Frass", serif;
-    }
-    
-    .fk-cvrltr-4 .letter .ending h3{
-        font-size: .9rem;
-        text-transform: capitalize;
-        margin-top: 1.25rem;
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
     
 }
